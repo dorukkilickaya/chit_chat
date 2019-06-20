@@ -1,0 +1,62 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Go\bin;C:\Program Files\Geth;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\nodejs\;C:\Users\DorukKilickaya\bin;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Go\bin;C:\Users\DorukKilickaya\AppData\Local\Microsoft\WindowsApps;C:\Users\DorukKilickaya\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\DorukKilickaya\AppData\Roaming\npm;C:\Users\DorukKilickaya\AppData\Local\atom\bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\DorukKilickaya\Desktop\chit_chat\app\package.json: Unexpected token } in JSON at position 366
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:304:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "react-app",
+    "version": "1.0.0",
+    "scripts": {
+      "compile": "webpack --config webpack.config.js"
+  },
+  
+  
+  
+    "name": "app",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+      "clean": "rm ./dist/**.js",
+      "build": "webpack",
+      "rebuild": "yarn run clean && yarn run build",
+      "start": "webpack-dev-server --open 'Google Chrome'"
+    },
+  
+  
+  
+  },
+    "private": true,
+    "devDependencies": {
+      "webpack": "^4.12.0",
+      "webpack-cli": "^3.0.8",
+      "webpack-dev-server": "^3.1.4"
+    },
+    "dependencies": {
+      "web3": "^1.0.0-beta.34"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
